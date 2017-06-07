@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="pe.edu.cibertec.crudproveedoresmemory.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView android:text="Lista de Proveedores"
+            android:layout_width="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo"
+            android:onClick="NuevoProveedor"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ListView
+            android:id="@+id/listViewProveedores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </TableRow>
+
+</LinearLayout>

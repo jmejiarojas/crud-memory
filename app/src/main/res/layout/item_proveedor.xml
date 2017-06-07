@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RegistroProveedorXML"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="4dip">
+    <ImageView
+        android:id="@+id/imgFotoProveedor"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/logolibertecsmall"  />
+    <TextView
+        android:id="@+id/TVITEM_RazonSocialProveedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgFotoProveedor"
+        android:text="TVITEM_RazonSocialProveedor" />
+    <TextView
+        android:id="@+id/TVITEM_RucProveedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TVITEM_RucProveedor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/TVITEM_RazonSocialProveedor"
+        android:layout_marginStart="21dp" />
+    <TextView
+        android:id="@+id/TVITEM_Direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TVITEM_Direccion"
+        android:layout_below="@+id/TVITEM_RucProveedor"
+        android:layout_alignStart="@+id/TVITEM_RazonSocialProveedor" />
+
+</RelativeLayout>
