@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         proveedores.add(proveedor2);
         proveedores.add(proveedor3);
 
-        adaptadorProveedores = new AdaptadorProveedores(getBaseContext(), R.layout.activity_main, proveedores);
+        adaptadorProveedores = new AdaptadorProveedores(getBaseContext(), R.layout.item_proveedor, proveedores);
 
         listViewProveedores.setAdapter(adaptadorProveedores);
 
