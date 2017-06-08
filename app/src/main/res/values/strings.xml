@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Crud de Proveedores en Memoria</string>
     <string name="title_activity_nuevo_proveedor">NuevoProveedor</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
 </resources>

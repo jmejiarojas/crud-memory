@@ -10,16 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".NuevoProveedor"
+            android:label="@string/title_activity_nuevo_proveedor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GridViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            android:label="@string/title_activity_grid_view"
+            android:theme="@style/AppTheme.NoActionBar"
         </activity>
-        <activity
-            android:name=".NuevoProveedor"
-            android:label="@string/title_activity_nuevo_proveedor"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
