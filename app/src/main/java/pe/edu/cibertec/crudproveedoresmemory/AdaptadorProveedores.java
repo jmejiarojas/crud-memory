@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by mejia on 07/06/2017.
@@ -18,11 +19,15 @@ import java.util.ArrayList;
 
 public class AdaptadorProveedores extends ArrayAdapter<ProveedorEntity> {
 
+    private Context context;
+    private int layout;
     private ArrayList<ProveedorEntity> proveedores;
 
-    public AdaptadorProveedores(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<ProveedorEntity> objects) {
-        super(context, resource, objects);
-        proveedores= (ArrayList<ProveedorEntity>) objects;
+    public AdaptadorProveedores(@NonNull Context context, @LayoutRes int layout, @NonNull ArrayList<ProveedorEntity> objects) {
+        super(context, layout, objects);
+        this.context = context;
+        this.layout = layout;
+        this.proveedores= (ArrayList<ProveedorEntity>) objects;
     }
 
     @NonNull
@@ -33,7 +38,7 @@ public class AdaptadorProveedores extends ArrayAdapter<ProveedorEntity> {
 
         if(viewItem == null){
             LayoutInflater inflater = LayoutInflater.from(getContext());
-            viewItem = inflater.inflate(R.layout.item_proveedor,null);
+            viewItem = inflater.inflate(this.layout,null);
         }
 
         ProveedorEntity proveedor = proveedores.get(position);
